@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".Home">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/menu"
+            style="@style/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/menu"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/keranjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_keranjang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Sambutan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/sambutan"
+            android:textColor="@color/white"
+            android:textSize="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu" />
+        />
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            style="@style/search"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="40dp"
+            android:hint="search">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/et_search"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/coffe"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="170dp"
+        style="@style/menu"
+        android:text="@string/coffe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_view" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/coffe2"
+        style="@style/menu"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/coffe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coffe"
+        app:layout_constraintTop_toBottomOf="@+id/bg_view" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/makan"
+        style="@style/menu"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="170dp"
+        android:text="@string/makanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffe" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/makan2"
+        style="@style/menu"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/snack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/makan"
+        app:layout_constraintTop_toBottomOf="@+id/coffe2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

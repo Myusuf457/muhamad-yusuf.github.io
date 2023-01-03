@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Coffee_Skuy</string>
+    <string name="judul">Coffee that Fuels your Dreams</string>
+    <string name="sub_judul">The best coffee is the one you like the most</string>
+    <string name="next">Next</string>
+    <string name="coffee_that_fuels">Coffee that Fuels</string>
+    <string name="your_dreams">your Dreams</string>
+    <string name="the_best_coffee_is_the_one_you_like">The best coffee is the one you like</string>
+    <string name="the_most">the most</string>
+    <string name="welcome">Welcome</string>
+    <string name="email">Email</string>
+
+    <string name="keterangan">
+        <font color="#ffffff"> jika belum punya akun</font>
+    </string>
+    <string name="title_register">
+        <font color="#FEA82F"><b> Klik Disini</b></font>
+    </string>
+
+    <string name="email_or_username">Email</string>
+    <string name="masukkan_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="Username">username</string>
+    <string name="passKon">Password Konfirmasi</string>
+    <string name="menu">Menu</string>
+    <string name="sambutan">Halo, Yusuf</string>
+    <string name="makanan">Makanan</string>
+    <string name="coffe">Coffe Hangat</string>
+    <string name="coffe2">Coffe Dingin</string>
+    <string name="snack">Snack</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="minuman_panas">Minuman Panas</string>
+    <string name="minuman_dingin">minuman Dingin</string>
+    <string name="Makanan_Dingin">Makanan Dingin</string>
+    <string name="harga2">Rp 10.000</string>
+    <string name="harga1">Rp 12.000</string>
+    <string name="Bakso_urat">Bakso Urat</string>
+</resources>
